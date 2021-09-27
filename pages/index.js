@@ -9,7 +9,6 @@ export default function Home({ allPostsData }) {
         <title>Brady Walters</title>
       </Head>
 
-      <h1>Hi Brady</h1>
       <BlogList data={allPostsData} />
     </div>
   )

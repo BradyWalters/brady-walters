@@ -1,4 +1,5 @@
 export default function BlogList({ data }) {
+  if(data.length !== 0) {
     return (
       <>
         {/* Taken from the NextJS tutorial https://nextjs.org/learn/basics/data-fetching/implement-getstaticprops*/}
@@ -18,4 +19,9 @@ export default function BlogList({ data }) {
         </section>
       </>
     );
+  }
+
+  return (
+    <h4>Coming Soon</h4>
+  );
 }
