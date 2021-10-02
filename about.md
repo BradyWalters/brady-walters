@@ -1,0 +1,50 @@
+---
+title: 'About Me'
+---
+
+## Introduction
+
+Hello, my name is Brady Walters and I'm currently a Computer Science and Cybersecurity High School Teacher in Las Vegas, Nevada. I'm originally from Boise, Idaho, and I moved to Las Vegas in 2021 to start my teaching carerr. I have a BS in Computer Science and a Masters in Teaching from Boise State University (Go Broncos). When I'm not teaching, I spend a lot of my time coding, mostly in the web space, but I also have a horrilbe addiction to learning new things and bouncing around.
+
+## Tech Skills
+
+The programming languages I'm most comfortable in are:
+- Java: The language I used most for my bachelor's degree
+- C: The *other* language I used for my bachelor's degree (for my systems programming classes)
+- JavaScript: The language I use most in recent years
+- Kotlin: The language I *really* want to use more often
+
+I've spent a lot of time on Linux machines and feel fairly comfortable with a bash shell open. I mean I can close **vi** but I'm not the command-line wizard I want to be yet. 
+
+I know a bit of SQL, and given the languages I learned first I've been more comfortable on the backend, but curretnly I'm spending most of my time learning about the frontend of websites and making cool things that I'm passionate about.
+
+#### What I'm learning / What I want to learn next
+
+- React: AKA the JS framework *everyone* is learning
+- Kotlin: I want to actually use it in a project
+- Python: There has to be some room left on that bandwagon 
+
+## Hobbies, Interests, Random Stuff
+
+Outside of programming, I spend a lot of time learning about things outside of tech, watching and/or playing sports, and playing video games.
+
+#### Subjects outside of tech
+
+- History: I *love* a good history book, podcast, documentary. Outside of techinical books I mostly just read history.
+- Teaching: Hey, my actual day job! It might not seem like it, but I take my job very seriously and I'm always trying to improve my craft, just like I'm always improving my programming. This includes continuing education, books, and workshops.
+- Cooking: I am a **terrible** cook, but I really want to improve, so I'm constanly watching cooking videos trying to improve. 
+
+#### Sports
+
+- Boise State Broncos: Growing up in Boise, and with the majority of my family being alumni, I didn't really have a choice but to be a Bronco fan. It doesn't hurt that they've been very good throughout my life, but even if they were terrible I'd still watch every football and basketball game I could. 
+- Golf: I've been playing golf my whole life, and I hope to play it for the rest of it. I love watching it and playing it, even though I'm definitely not as good as I want to be. 
+- Football, basketball, baseball, etc: I generally just love watching sports, and while these three are the ones I watch the most outside of golf, I will watch pretty much any competitive sport.
+
+#### Favorite Video Games
+
+In no particular order:
+- Yakuza 0: I LOVE the Yakuza series, but I'll just keep it to one on this list, my favorite one.
+- Persona 5: Persona is great, this Persona game fixed a lot of problems I had with previous ones.
+- The Legend of Zelda: Wind Waker: My first favorite game, if you don't like it you can fight me (not really, but how can you hate on that game).
+
+## Resume
