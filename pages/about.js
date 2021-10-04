@@ -1,26 +1,15 @@
-import { getPostData } from '../lib/posts'
-import path from 'path'
+import MDXDocument from '../about.mdx'
+import Head from 'next/head'
 
-export default function Post({ postData }) {
+export default function Post() {
     return (
-      <div>
-        {/* {postData.title}
-        <br />
-        {postData.id}
-        <br />
-        {postData.date} */}
-        <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
-        <iframe src="https://drive.google.com/file/d/1M28qiZQKcYmCRAiLh74nji4-LJK_dZgZ/preview" width="640" height="480" allow="autoplay"></iframe>
-      </div>
+      <>
+        <Head>
+          <title>About Me</title>
+        </Head>
+        
+        <MDXDocument />
+      </>
     )
   }
   
-
-export async function getStaticProps() {
-  const postData = await getPostData('about', path.join(process.cwd()))
-  return {
-    props: {
-      postData
-    }
-  }
-}
