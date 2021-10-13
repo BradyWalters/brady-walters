@@ -6,13 +6,11 @@ export default function BlogList({ data }) {
         {/* Add this <section> tag below the existing <section> tag */}
         <section>
           <ul>
-            {data.map(({ id, date, title }) => (
-              <li key={id}>
-                {title}
+            {data.map(({ frontMatter, slug }) => (
+              <li key={slug}>
+                {frontMatter.title}
                 <br />
-                {id}
-                <br />
-                {date}
+                {frontMatter.date}
               </li>
             ))}
           </ul>

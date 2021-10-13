@@ -5,7 +5,7 @@ export default function SidebarLinks() {
         <div>
             <ul>
                 <li>
-                    <Link href="/about"><a>About</a></Link>
+                    <Link href="/posts/about"><a>About</a></Link>
                 </li>
                 <li>
                     <Link href="/"><a>Blog</a></Link>
