@@ -4,7 +4,7 @@ import SocialLinks from "./social-links";
 
 export default function Sidebar() {
     return (
-        <div>
+        <div className="sidebar">
             <h2>Brady Walters</h2>
             <Avatar />
             <SidebarLinks />
