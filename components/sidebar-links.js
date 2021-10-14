@@ -2,7 +2,7 @@ import Link from 'next/link'
 
 export default function SidebarLinks() {
     return (
-        <div>
+        <div className="sideLinks">
             <ul>
                 <li>
                     <Link href="/posts/about"><a>About</a></Link>
