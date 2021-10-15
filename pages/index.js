@@ -1,8 +1,6 @@
 import Head from 'next/head'
 import BlogList from '../components/blog-list'
-import fs from 'fs'
-import path from 'path'
-import matter from 'gray-matter'
+import { getSortedPostsData } from '../lib/posts'
 
 export default function Home({ posts }) {
   return (
@@ -19,17 +17,7 @@ export default function Home({ posts }) {
 //Pulled from this great blog post https://blog.jetbrains.com/webstorm/2021/10/building-a-blog-with-next-js-and-mdx/
 //TODO: work on putting this in a library, making it more general use
 export const getStaticProps = async () => {
-  const files = fs.readdirSync(path.join(process.cwd(), 'posts'))
-
-  const posts = files.map(filename => {
-    const markdownWithMeta = fs.readFileSync(path.join('posts', filename), 'utf-8')
-    const { data: frontMatter } = matter(markdownWithMeta)
-
-    return {
-      frontMatter,
-      slug: filename.split('.')[0]
-    }
-  })
+  const posts = getSortedPostsData()
 
   return {
     props: {

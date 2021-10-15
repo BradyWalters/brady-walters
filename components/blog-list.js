@@ -1,3 +1,7 @@
+import { Card, Link } from '@mui/material'
+import { CardActionArea } from '@mui/material';
+import Date from '../components/date'
+
 export default function BlogList({ data }) {
   if(data.length !== 0) {
     return (
@@ -7,11 +11,17 @@ export default function BlogList({ data }) {
         <section>
           <ul>
             {data.map(({ frontMatter, slug }) => (
-              <li key={slug}>
-                {frontMatter.title}
-                <br />
-                {frontMatter.date}
-              </li>
+              <Link href={"posts/" + slug}>
+              <Card>
+                <CardActionArea>
+                  <li key={slug}>
+                    {frontMatter.title}
+                    <br />
+                    <Date dateString={frontMatter.date} />
+                  </li>
+                </CardActionArea>
+              </Card>
+              </Link>
             ))}
           </ul>
         </section>
