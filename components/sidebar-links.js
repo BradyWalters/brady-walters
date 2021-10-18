@@ -1,16 +1,12 @@
 import Link from 'next/link'
+import Nav from 'react-bootstrap/Nav';
 
 export default function SidebarLinks() {
     return (
-        <div className="sideLinks">
-            <ul>
-                <li>
-                    <Link href="/posts/about"><a>About</a></Link>
-                </li>
-                <li>
-                    <Link href="/"><a>Blog</a></Link>
-                </li>
-            </ul>
-        </div>
+        <Nav defaultActiveKey="/home" className="flex-column">
+            <Nav.Link><Link href="/posts/about"><a>About</a></Link></Nav.Link>
+
+            <Nav.Link><Link href="/"><a>Blog</a></Link></Nav.Link>
+        </Nav>
     );
 }

@@ -1,4 +1,5 @@
 import Sidebar from "./sidebar";
+import 'bootstrap/dist/css/bootstrap.min.css'
 
 export default function Layout({ children }) {
     return (
