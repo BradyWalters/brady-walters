@@ -1,13 +1,15 @@
 import Image from 'next/image'
 import profilePic from '../public/headshot.jpg'
+import Avatar from '@mui/material/Avatar'
 
-export default function Avatar() {
+export default function myAvatar() {
   return (
-    <Image 
-        src={profilePic} 
-        alt="Picture of Brady Walters" 
-        width={100}
-        height={75}
-    />
+    <Avatar variant='circular' sx={{ width: 64, height: 64}}>
+      <Image 
+          src={profilePic} 
+          alt="Picture of Brady Walters" 
+          layout="fill"
+      />
+    </Avatar>
   )
 }

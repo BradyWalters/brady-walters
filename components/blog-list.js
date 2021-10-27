@@ -11,7 +11,7 @@ export default function BlogList({ data }) {
         <section>
           <ul>
             {data.map(({ frontMatter, slug }) => (
-              <Link href={"posts/" + slug}>
+              <li key={ slug } ><Link href={"posts/" + slug}>
               <Card>
                 <CardActionArea>
                   <li key={slug}>
@@ -21,7 +21,7 @@ export default function BlogList({ data }) {
                   </li>
                 </CardActionArea>
               </Card>
-              </Link>
+              </Link></li>
             ))}
           </ul>
         </section>
