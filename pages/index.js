@@ -14,8 +14,11 @@ export default function Home({ posts }) {
   )
 }
 
+Home.defaultProps = {
+  data: 'not found'
+}
+
 //Pulled from this great blog post https://blog.jetbrains.com/webstorm/2021/10/building-a-blog-with-next-js-and-mdx/
-//TODO: work on putting this in a library, making it more general use
 export const getStaticProps = async () => {
   const posts = getSortedPostsData()
 

@@ -3,7 +3,7 @@ import { CardActionArea } from '@mui/material';
 import Date from '../components/date'
 
 export default function BlogList({ data }) {
-  if(data.length !== 0) {
+  if(data.length !== 0 && data != "not found") {
     return (
       <>
         {/* Taken from the NextJS tutorial https://nextjs.org/learn/basics/data-fetching/implement-getstaticprops*/}
