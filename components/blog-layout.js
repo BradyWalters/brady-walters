@@ -6,7 +6,9 @@ export default function BlogLayout({ metadata, children }) {
         <Head>
             <title>{metadata.title}</title>
         </Head>
-        {children}
+        <div className="blog-text">
+          {children}
+        </div>
       </>
     )
 }
