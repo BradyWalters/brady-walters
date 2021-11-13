@@ -1,5 +1,6 @@
 //Pretty much this whole file is taken from the Next JS tutorial https://nextjs.org/learn/basics/dynamic-routes/render-markdown
 
+import Head from 'next/head'
 import { serialize } from 'next-mdx-remote/serialize'
 import { MDXRemote } from 'next-mdx-remote'
 import fs from 'fs'
@@ -7,10 +8,12 @@ import path from 'path'
 import matter from 'gray-matter'
 
 export default function PostPage({ frontMatter: { title }, mdxSource }) {
-  document.title = title;
   
   return (
-    <div className="blog-text">
+    <div>
+      <Head>
+        <title>{title}</title>
+      </Head>
       <h1>{title}</h1>
       <MDXRemote {...mdxSource} />
     </div>
