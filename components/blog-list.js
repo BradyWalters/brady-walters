@@ -12,7 +12,7 @@ export default function BlogList({ data }) {
           <ul>
             {data.map(({ frontMatter, slug }) => (
               <li key={ slug } ><Link href={"posts/" + slug}>
-              <Card>
+              <Card sx={{ width: 1 }}>
                 <CardActionArea>
                   <li key={slug}>
                     {frontMatter.title}

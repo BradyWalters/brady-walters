@@ -11,4 +11,9 @@ ul {
 #sidebar-name {
     margin-left: 15px;
 }
-    
+
+@media screen and (max-width: 600px) {
+    html {
+        font-size: xx-large;
+    }
+}

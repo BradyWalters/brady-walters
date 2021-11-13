@@ -7,8 +7,10 @@ import path from 'path'
 import matter from 'gray-matter'
 
 export default function PostPage({ frontMatter: { title }, mdxSource }) {
+  document.title = title;
+  
   return (
-    <div>
+    <div className="blog-text">
       <h1>{title}</h1>
       <MDXRemote {...mdxSource} />
     </div>
