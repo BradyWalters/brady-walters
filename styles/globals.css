@@ -2,7 +2,6 @@
 
 html {
     font-family: 'Didact Gothic', sans-serif;
-    font-size: 1em;
 }
 
 ul {
@@ -15,6 +14,10 @@ ul {
 
 @media screen and (max-width: 600px) {
     html {
+        font-size: x-large;
+    }
+
+    .blogContent {
         font-size: xx-large;
     }
 }

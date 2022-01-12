@@ -10,7 +10,7 @@ import matter from 'gray-matter'
 export default function PostPage({ frontMatter: { title }, mdxSource }) {
   
   return (
-    <div>
+    <div className="blogContent">
       <Head>
         <title>{title}</title>
       </Head>
