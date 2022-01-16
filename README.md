@@ -1,3 +1,9 @@
+# My Personal Website
+
+Here is the code to my personal website found [here.](https://bradywalters.dev) If you want to find out more about how I made it, you can check out [my post on the website about it.](https://www.bradywalters.dev/posts/this-website)
+
+Anyways, here is the default NextJS stuff.
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
