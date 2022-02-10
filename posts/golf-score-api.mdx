@@ -1,0 +1,48 @@
+---
+title: 'Golf Score API'
+date: '2022-02-10'  
+categories: 'projects dev backend'
+---
+### [Link to project](https://github.com/BradyWalters/golf-score-api)
+
+### Tech Used: ExpressJS, MongoDB, Mongoose, Jest
+
+### Language Used: JavaScript
+
+One of my favorite outdoor activities, especially now that I live in Las Vegas is golfing. I’ve been golfing since I was very young, I played for my high school golf team, and I even watch golf in my spare time, so I really do love golf. So I decided to make an API to keep track of my scores, both as a way to learn how to create APIs, and as a way to improve my golf game.
+
+Express was the obvious choice when creating an API. It is very widely used, so when I ran into issues I could easily look up my problems and find many people solving the same things. And it’s fairly straightforward for someone like me creating an API for the first time. I’ve used APIs in the past, so I wasn’t completely new, but I wanted to keep it somewhat simple on my first of hopefully many attempts. 
+
+For data storage I decided to go with MongoDB, which was another first for me. I’ve of course heard a lot about MongoDB, but my experience with data storage is based in SQL. In college I took a Databases class which focused on SQL, and my Web Development class taught us the LAMP stack, so I learned about MySQL. 
+
+So since I have that experience, I decided to use MongooseJS so that I could create schemas for my data, and kind of bridge the gap with my knowledge. Also it makes validating the inputs for the API much easier, because Mongoose can handle a lot of it for me. 
+
+### Data: Scores
+
+The data being stored is pretty simple. For scores I'm just storing the number of strokes during a round, number of holes played, number of fairways hit, number of greens hit in regulation and number of putts. I wanted to include those last two so I know which part of my game I need to work on, long game, irons or short game. And they also have a User ID stored as a foreign key. 
+
+### Data: Courses
+
+Courses I wanted to store both information that is important for golf handicap reasons, like the slope and the rating, and also information that is generally useful, like course name and address. The API currently does not have a handicap calculation functionality, but if someone wanted to they could use the information from the API to calculate their own. 
+
+### Data: Users
+
+The data we store for users is simple login information, just email and encrypted passwords, along with some info that we need for handicap calculations. The one that I *really* didn’t like adding was a gender column which can only be male or female. To be clear, I absolutely believe gender is more complicated than just a binary male and female. The only reason I even included it was due to the fact that golf handicap calculations are different for men and women in golf. I wish it weren’t the case, but if I wanted my API to have all of the information to calculate a user’s handicap.  
+
+### What would I do differently if I started over?
+
+Two things I wish I had done from the beginning is testing and authentication. I pushed those off to the end of my project, and it made actually implementing them much harder.
+
+First off, especially with a CRUD API like this, it is pretty easy to know what to test even before we start writing the code. So Test Driven Development works particularly well with this project, and I wish I had done that from the beginning. I ended up using Jest and Supertest, and since it was my first time testing APIs it took some time to implement. But it currently does work somewhat!
+
+Next I would make sure to authenticate my API from the beginning. This one didn’t cause too much headaches adding it later in the project, but I was very tempted to not authenticate once I had everything done. But luckily since I knew I would be publishing my app, I quickly decided that was a terrible idea. 
+
+### What next?
+
+First thing I need to do is fix my testing. I currently use other tests to set up the database for later tests, which is *really* not great. I need to set up a configuration for my tests so the database is ready for each test independently.
+
+Also I want to make sure that only users who created scores can delete or edit them, because currently anyone who is authenticated can delete anything.
+
+---
+
+I think I’m going to return to this site next and make it look a lot better. Now that I’ve had it up and working, I want to really work on making it look nice on both desktop and mobile devices, which is something I’ve really struggled with. And maybe after that I want to create a Twitch chat bot for [my channel](https://twitch.tv/bradywalters).
