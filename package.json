@@ -9,11 +9,10 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@emotion/react": "^11.4.1",
-    "@emotion/styled": "^11.3.0",
+    "@emotion/react": "^11.7.1",
+    "@emotion/styled": "^11.6.0",
     "@mdx-js/loader": "^1.6.22",
-    "@mui/icons-material": "^5.0.1",
-    "@mui/material": "^5.0.1",
+    "@mdx-js/react": "1.6.22",
     "@next/mdx": "^11.1.2",
     "date-fns": "^2.25.0",
     "file-system": "^2.2.2",
@@ -27,6 +26,8 @@
     "rehype-raw": "^6.1.0",
     "remark": "^13.0.0",
     "remark-html": "^13.0.2",
+    "theme-ui": "^0.13.1",
+    "theme-ui-preset-geist": "^0.0.2",
     "unified": "^10.1.0"
   },
   "devDependencies": {
