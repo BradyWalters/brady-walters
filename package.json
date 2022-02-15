@@ -26,8 +26,6 @@
     "rehype-raw": "^6.1.0",
     "remark": "^13.0.0",
     "remark-html": "^13.0.2",
-    "theme-ui": "^0.13.1",
-    "theme-ui-preset-geist": "^0.0.2",
     "unified": "^10.1.0"
   },
   "devDependencies": {
