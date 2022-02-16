@@ -1,20 +1,25 @@
+import TwitterIcon from '@mui/icons-material/Twitter';
+import GitHubIcon from '@mui/icons-material/GitHub';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import styles from './social-links.module.css'
+
 export default function SocialLinks() {
     return (
         <div>
-            <ul>
+            <ul className={styles.links}>
                 <li>
                     <a href="https://twitter.com/bradywalters_">
-                        Twitter
+                        <TwitterIcon fontSize='large'/>
                     </a>
                 </li>
                 <li>
                     <a href="https://github.com/bradywalters">
-                        Github
+                        <GitHubIcon fontSize='large'/>
                     </a>
                 </li>
                 <li>
                     <a href="https://www.linkedin.com/in/brady-walters/">
-                        LinkedIn
+                        <LinkedInIcon fontSize='large'/>
                     </a>
                 </li>
             </ul>

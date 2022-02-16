@@ -12,8 +12,7 @@ export default function BlogList({ data }) {
                         {data.map(({ frontMatter, slug }) => (
                             <Link href={`posts/${slug}`}>
                                 <li key={slug} >
-                                    {frontMatter.title}
-                                    <br />
+                                    <h3>{frontMatter.title}</h3>
                                     <Date dateString={frontMatter.date} />
                                 </li>
                             </Link>

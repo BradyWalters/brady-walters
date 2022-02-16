@@ -1,7 +1,8 @@
 .nav {
-    overflow: hidden;
+    display: flex;
 }
 
 .nav a {
-    padding: 5px
+    padding: 10px;
+    font-size: xx-large;
 }
