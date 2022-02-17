@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import Date from '../components/date'
 import styles from './blog-list.module.css'
+import Card from '@mui/material/Card';
 
 export default function BlogList({ data }) {
     if (data.length !== 0 && data != "not found") {
@@ -11,12 +12,14 @@ export default function BlogList({ data }) {
                 <section>
                     <ul>
                         {data.map(({ frontMatter, slug }) => (
-                            <Link href={`posts/${slug}`}>
-                                <li key={slug} >
-                                    <h3>{frontMatter.title}</h3>
-                                    <Date dateString={frontMatter.date} />
-                                </li>
-                            </Link>
+                            <Card sx={{ minWidth: 300 }} variant="outlined" key={slug}>
+                                <Link href={`posts/${slug}`}>
+                                    <li>
+                                        <h3>{frontMatter.title}</h3>
+                                        <Date dateString={frontMatter.date} />
+                                    </li>
+                                </Link>
+                            </Card>
                         ))}
                     </ul>
                 </section>

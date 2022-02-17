@@ -2,8 +2,9 @@
     display: flex;
     flex-direction: column;
     align-items: left;
+    text-align: center;
 }
 
 .list li {
-    border-style: inset;
+    padding-bottom: 15px;
 }
