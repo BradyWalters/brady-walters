@@ -11,7 +11,7 @@ export default function BlogList({ data }) {
             <ul className={styles.list}>
                 {data.map(({ frontMatter, slug }) => (
                     <Card sx={{ minWidth: 300 }} variant="outlined" key={slug}>
-                        <Link href={`posts/${slug}`}>
+                        <Link href={`posts/${slug}`} passHref={true}>
                             <li>
                                 <h3>{frontMatter.title}</h3>
                                 <Date dateString={frontMatter.date} />

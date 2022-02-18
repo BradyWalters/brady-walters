@@ -5,9 +5,7 @@ import Link from 'next/link'
 export default function Title() {
     return (
         <div className={styles.title}>
-            <Link href='/'>
-                <Avatar />
-            </Link>
+            <Avatar />
             <h1>Brady Walters</h1>
         </div>
     )
