@@ -1,8 +1,22 @@
 .title {
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 .title h1 {
     padding-left: 10px;
+}
+
+@media screen and (max-width: 600px) {
+    .title {
+        display: block;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .title > * {
+        margin-right: auto;
+        margin-left: auto;
+    }
 }

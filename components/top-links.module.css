@@ -3,3 +3,11 @@
     justify-content: center;
     align-items: center;
 }
+
+@media screen and (max-width: 600px) {
+    .links {
+        display: block;
+        justify-content: center;
+        align-items: center;
+    }
+}

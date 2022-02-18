@@ -4,6 +4,8 @@ import styles from './avatar.module.css'
 
 export default function myAvatar() {
     return (
-        <Image src={profilePic} alt="Headshot of Brady Walters" className={styles.circle} width={90} height={50}/>
+        <div className={styles.container}>
+            <Image src={profilePic} alt="Headshot of Brady Walters" className={styles.circle} />
+        </div>
     )
 }

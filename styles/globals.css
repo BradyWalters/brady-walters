@@ -12,11 +12,8 @@ ul {
 .main {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
-}
-
-#sidebar-name {
-    margin-left: 15px;
 }
 
 @media screen and (max-width: 600px) {
