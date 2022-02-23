@@ -5,7 +5,7 @@ import Link from 'next/link'
 
 export default function myAvatar() {
     return (
-        <Link href='/'>
+        <Link href='/' passHref='true'>
             <div className={styles.container}>
                 <Image src={profilePic} alt="Headshot of Brady Walters" className={styles.circle} />
             </div>
