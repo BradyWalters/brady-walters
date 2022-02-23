@@ -1,0 +1,30 @@
+---
+
+title: 'How CSS Modules Improved The Look of This Website'
+
+date: '2022-02-18'
+
+categories: 'dev projects css'
+
+author: 'Brady Walters'
+
+---
+When I first put this website together a few months ago I was mainly focused on getting it up and running as fast as possible. I'd attempted things like this in the past, but I always struggled to get something actually made and published, because I would spend so much time trying to make it perfect. So this time I tried to get something up quickly, and then improve on it as I go.
+
+Overall I was very happy with how my personal website turned out. NextJS was fun to work with and actually putting together the blog posts wasn't too difficult. The one thing I was really dreading was the look and feel of the site. It's almost a cliche at this point to say I've never really liked CSS, but during my brief experience with it I spent a lot of time to do seemingly minor things.
+
+Because of these past experiences, I decided to try and write as little CSS as possible and use something like a UI library or a CSS framework to do all of the hard work for me. I ended up using Material UI because I could simply import React components and they would look pretty good out of the box with no customization. 
+
+This ended up working okay, but any time I wanted to change something I didn't like, I struggled trying to change these pre-bulit components in small ways. I know that it is possible to change them, but with my current knowledge it just wasn't as easy as I was looking for.
+
+So I decided the first thing I wanted to change with my site was the look of it, and I decided to dive head first into CSS. I've found in the past that I should actually spend *more* time on things I struggle with, rather than trying to avoid it. And CSS probably isn't going away any time soon, so if I want to continue doing web development, I should take the time and actually use it.
+
+And that's where CSS modules came in to really help me out. NextJS has CSS module support out of the box so I decided to go with that, because it still is just CSS, and with some nice things baked into it. 
+
+What CSS modules do is allow you to scope your CSS to a component, rather than the entire page. Instead of having one giant global CSS file where all of your CSS rules reside, you can create individual CSS module files for each component, and import them in. 
+
+The major benefit of this is it prevents the name collision that can happen with CSS. CSS modules will generate unique names for each component, so even if there are multiple of the same class name, they will not affect each other. 
+
+This was really nice, I couldn't mess up all of my CSS with one poorly written rule. All the CSS affecting my components is in a nice, short, CSS file that is easy to understand. Even just having the small file size that could fit on one screen really helped, because large CSS files can be *really intimidating*.
+
+I know the site really doesn't look too different from how it was before, but I am much prouder of it now that I made it look this way. If you want, you can take a look at my code, [you can check it out here on my Github page](https://github.com/BradyWalters/brady-walters). And if you have any advice, tips, or just want to talk about programming, video games, sports, whatever, you can easily reach me on [Twitter](https://twitter.com/bradywalters_) 😊
