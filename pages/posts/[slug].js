@@ -6,11 +6,12 @@ import { MDXRemote } from 'next-mdx-remote'
 import fs from 'fs'
 import path from 'path'
 import matter from 'gray-matter'
+import styles from './[slug].module.css'
 
 export default function PostPage({ frontMatter: { title }, mdxSource }) {
   
   return (
-    <div className="blogContent">
+    <div className={styles.content}>
       <Head>
         <title>{title}</title>
       </Head>
