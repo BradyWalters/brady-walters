@@ -9,7 +9,8 @@ export default function BlogList({ data }) {
         {/* Add this <section> tag below the existing <section> tag */ }
         return (
             <ul className={styles.list}>
-                {data.map(({ frontMatter, slug }) => (
+                {data.filter(blog => blog.frontMatter.published).map(({ frontMatter, slug }) => (
+                    
                     <Card sx={{ minWidth: 300, maxWidth: 450 }} variant="outlined" key={slug}>
                         <Link href={`posts/${slug}`} passHref={true}>
                             <li>
